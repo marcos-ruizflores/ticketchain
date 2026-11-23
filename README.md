@@ -4,6 +4,15 @@ Concert tickets as NFTs, with resale rules enforced by the contract instead of b
 
 Scalpers buy tickets in bulk and resell them at 5x the price. Here a ticket can only change hands through the contract, and the contract refuses any resale above the cap the organizer set. The organizer also gets a cut of every resale.
 
+## Live on Sepolia
+
+| Contract | Address |
+|---|---|
+| EuroToken (EURT) | [`0x26a11F8c057c9e9a6044c26A87B2f479D4B7fdB7`](https://sepolia.etherscan.io/address/0x26a11F8c057c9e9a6044c26A87B2f479D4B7fdB7#code) |
+| TicketMarket | [`0xCa32Aaf74dd5d27031431dd113049643A5E27181`](https://sepolia.etherscan.io/address/0xCa32Aaf74dd5d27031431dd113049643A5E27181#code) |
+
+Both are verified on Etherscan. Grab some test EURT from the faucet in the app and buy a ticket.
+
 ## How it works
 
 - **Organizers** create an event with a price, capacity, a per-wallet limit, a resale cap (for example 110% of face value) and a royalty on resales.

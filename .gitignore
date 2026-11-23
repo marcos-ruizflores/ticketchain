@@ -3,3 +3,7 @@ out/
 cache/
 broadcast/*/31337/
 .env
+.DS_Store
+.idea/
+broadcast/**/dry-run/
+broadcast/**/*.lock
