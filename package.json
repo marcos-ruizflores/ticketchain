@@ -1,0 +1,10 @@
+{
+  "name": "ticketchain",
+  "private": true,
+  "description": "Concert tickets as NFTs with a resale price cap, paid in a test euro stablecoin",
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/contracts": "5.6.1",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.7"
+  }
+}
