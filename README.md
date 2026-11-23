@@ -2,6 +2,8 @@
 
 Concert tickets as NFTs, with resale rules enforced by the contract instead of by a platform's terms of service.
 
+**Live demo:** https://marcos-ruizflores.github.io/ticketchain/ (Sepolia testnet, MetaMask needed to buy)
+
 Scalpers buy tickets in bulk and resell them at 5x the price. Here a ticket can only change hands through the contract, and the contract refuses any resale above the cap the organizer set. The organizer also gets a cut of every resale.
 
 ## Live on Sepolia
