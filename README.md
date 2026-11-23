@@ -55,8 +55,27 @@ forge script script/Deploy.s.sol --rpc-url sepolia --account deployer --broadcas
 
 The script deploys EURT and the market and creates a demo event. You need a little Sepolia ETH for gas, which you can get from any public faucet.
 
+## Web app
+
+`web/` is a small React app (Vite, TypeScript, wagmi, viem) to use the contracts from the browser:
+
+- **Eventos**: upcoming events with stock, rules and a buy button
+- **Reventa**: tickets for sale, with how far above face value each one is
+- **Mis entradas**: your tickets rendered from the on-chain SVG, with a resale form that shows the cap
+- **Organizador**: create events, check tickets in at the door and authorise scanner wallets
+
+EURT approvals are handled automatically before a purchase, and contract errors are shown as readable messages.
+
+```bash
+cd web
+npm install
+cp .env.example .env   # contract addresses from the deploy script
+npm run dev
+```
+
+There's no ticket enumeration on-chain, so the app reads every ticket through multicall. That's fine for a demo. A real deployment would index the events with a subgraph or a small backend.
+
 ## Roadmap
 
-- Web app (React + wagmi) to connect a wallet, buy, resell and see your tickets
 - QR check-in. The ticket holder signs a message and the scanner verifies the signature and the owner
 - Refunds if an event is cancelled
